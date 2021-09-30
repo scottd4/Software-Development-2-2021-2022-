@@ -1,4 +1,4 @@
-public class searchArray {
+public class SearchArray {
 
     public static int findIndex(char [] ca, char c)
     {

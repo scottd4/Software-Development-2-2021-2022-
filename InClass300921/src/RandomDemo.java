@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class InClass {
+public class RandomDemo {
 
     public static String jumble(String s)
     {
