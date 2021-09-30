@@ -3,8 +3,9 @@ public class Person {
 
     public static int counter = 0;
 
-    private String fName, lName;
-    private Address address;
+    private final String fName;
+    private final String lName;
+    private final Address address;
 
 
     public Person(String fName, String lName, Address address)

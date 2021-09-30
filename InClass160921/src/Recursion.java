@@ -8,11 +8,11 @@ public class Recursion {
         {
             if (y == -1)
             {
-                return (double) (1.0/x);
+                return 1.0/x;
             }
             else
             {
-                return (double)((1.0/x) * powers(x, y+1));
+                return (1.0/x) * powers(x, y+1);
             }
         }
         else if (y == 1)

@@ -1,7 +1,9 @@
 public class Box {
 
-    private String boxName;
-    private int w,h,d;
+    private final String boxName;
+    private final int w;
+    private final int h;
+    private final int d;
     private boolean full = false;
 
     public Box()

@@ -8,11 +8,11 @@ public class Recursion {
         {
             if (y == -1)
             {
-                return (double) (1.0/x);
+                return 1.0/x;
             }
             else
             {
-                return (double)((1.0/x) * powers(x, y+1));
+                return (1.0/x) * powers(x, y+1);
             }
         }
         else if (y == 1)
@@ -29,7 +29,7 @@ public class Recursion {
             return "" + s.charAt(s.length()-1) +
                     reverse(s.substring(0, s.length()-1));
     }
-    private boolean full = false;
+    private final boolean full = false;
     public String getBooleanValue()
     {
         return full ? "full" : "empty";

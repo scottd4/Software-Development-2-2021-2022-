@@ -1,7 +1,7 @@
 public class Box {
 
     private boolean full = false;
-    private String boxName;
+    private final String boxName;
 
     public Box()
     {
