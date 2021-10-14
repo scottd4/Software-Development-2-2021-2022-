@@ -14,3 +14,7 @@ All code from class and weekly labs will be uploaded to this repository
 [InClass260921](InClass260921)  - lab3 Jumble words skeleton
 
 [InClass300921](InClass300921)  - Using Random Class and seed
+
+[InClass041021](InClass041021)  - File splitter fifth word 2 ways
+
+[InClass111021](InClass111021)  - print 5th word and create files demo
