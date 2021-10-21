@@ -23,4 +23,4 @@ All code from class and weekly labs will be uploaded to this repository
 
 [InClass111021](InClass111021)  - print 5th word and create files demo
 
-[InClass181021](InClass181021)  - Sorting
+[InClass181021](InClass181021)  - Sorting lab 5
