@@ -1,47 +1,23 @@
 import java.io.File;
 import java.io.PrintWriter;
+import java.time.LocalTime;
+import java.time.temporal.ChronoField;
+import java.util.Date;
 import java.util.Scanner;
 
 public class ReadAndStore {
 
+
+
+
+    public static int add(int i, int j)
+    {
+
+
+        return i + j;
+    }
+
     public static void main(String[] args) {
-        int numPrint = 5;
-        int numFiles = 5;
-
-
-        File [] fa = new File[numFiles];
-        PrintWriter [] pw = new PrintWriter[numFiles];
-        try {
-            for (int i = 0; i < numFiles; i++) {
-                fa[i] = new File("file" + i + ".txt");
-                pw[i] = new PrintWriter(fa[i]);
-            }
-
-            Scanner sc = new Scanner(new File("text.txt"));
-            int counter = 0;
-
-            while (sc.hasNext())
-            {
-                String word = sc.next();
-
-                if (counter%numPrint == 0)
-                {
-                    System.out.println(word);
-                }
-
-                pw[counter%numFiles].println(word);
-
-                counter++;
-            }
-
-            for(int i = 0; i < numFiles; i++)
-            {
-                pw[i].close();
-            }
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
+        System.out.println(add(2,5));
     }
 }
