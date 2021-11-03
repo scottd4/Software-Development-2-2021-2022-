@@ -21,8 +21,6 @@ public class FithWord {
                 else
                     sc.next();
                 counter ++;
-
-
             }
 
         }
