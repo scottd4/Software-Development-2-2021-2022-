@@ -15,7 +15,7 @@ All code from class and weekly labs will be uploaded to this repository
 
 [InClass270921](InClass270921)  - Inheritance demo
 
-[InClass300921](InClass300921)  - Using Random Class and seed
+[InClass300921](InClass300921)  - Using Random Class and seed, Appending to text file
 
 [InClass041021](InClass041021)  - lab4 tutorial
 
