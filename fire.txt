@@ -1,0 +1,25 @@
+Year,Name of Fire Station or Fire Post,Station or Post,Fires,Special Service Incidents,False Alarms,Total ,Ambulance Turnouts,OBJECTID
+        2013,Roscommon Town,Station,58,23,6,87,0,1
+2013,Castlerea,Station,53,12,3,68,1,2
+2013,Ballaghaderreen,Station,51,18,3,72,0,3
+2013,Boyle,Station,50,15,1,66,0,4
+2013,Elphin,Station,25,5,1,31,1,5
+2013,Strokestown,Station,38,11,1,50,0,6
+2012,Roscommon,Station,43,15,25,83,1,7
+2012,Castlerea,Station,45,11,15,71,0,8
+2012,Ballaghaderreen,Station,33,20,9,62,0,9
+2012,Boyle,Station,21,16,7,44,1,10
+2012,Elphin,Station,14,12,5,31,0,11
+2012,Strokestown,Station,15,16,8,39,0,12
+2011,Roscommon,Station,63,8,19,90,0,13
+2011,Castlerea,Station,73,27,9,109,0,14
+2011,Ballaghaderreen,Station,71,17,9,97,0,15
+2011,Boyle,Station,53,21,17,91,0,16
+2011,Elphin,Station,16,15,3,34,0,17
+2011,Strokestown,Station,30,13,8,51,0,18
+2010,Roscommon,Station,81,21,16,118,0,19
+2010,Castlerea,Station,99,42,6,147,0,20
+2010,Ballaghaderreen,Station,123,22,15,160,0,21
+2010,Boyle,Station,59,12,8,79,0,22
+2010,Elphin,Station,31,20,2,53,0,23
+2010,Strokestown,Station,39,32,6,77,0,24
