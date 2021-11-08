@@ -28,3 +28,5 @@ All code from class and weekly labs will be uploaded to this repository
 [InClass011121](InClass011121)  - Temp Convert, Layouts, Interfaces
 
 [InClass031121](InClass031121)  - Write to file on close
+
+[InClass081121](InClass081121)  - More Sorting
