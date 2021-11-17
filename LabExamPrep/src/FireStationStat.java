@@ -1,25 +1,16 @@
-import java.util.Scanner;
-
 public class FireStationStat {
-
-    private String name, station;
-    private int year, fires, special, falseAlarm;
+    private int year, fire, special;
+    private String stationName;
 
     public FireStationStat(String s)
     {
-        Scanner sc = new Scanner(s);
-        sc.useDelimiter(",");
-
-        this.year = sc.nextInt(); // skip year
-        this.name = sc.next();
-        this.station = sc.next();
-        this.fires = sc.nextInt();
 
     }
-
 
     public String toString()
     {
-        return year + "\n" + name + " - " + station + "\n\n";
+        return "Station Name: " + stationName + "\nYear: " + year+ "\n\n\n";
     }
+
+
 }
