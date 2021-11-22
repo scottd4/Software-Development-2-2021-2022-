@@ -1,0 +1,103 @@
+OBJECTID,Name,Address,Website,Type,MUGA,Longitude,Latitude
+1,Atlantic Pond,"Ballintemple, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.43083320640477,51.9002479641239
+2,Blackrock Amenity Walk,"Castle Road, Blackrock, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.4024213013784,51.9002981056964
+3,South Parish Walk,"Queens Old Castle, Grand Parade, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.47577869496518,51.8984771099934
+4,Central Island Walk,"Daunt Square, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.47585693283651,51.8985625492767
+5,Shandon Walk,"Shandon, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.47634971177046,51.9028077689681
+6,University Walk,"UCC, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Walk,,-8.49213217706456,51.8934994236744
+7,Tank Field,,,Park,,-8.44117100072812,51.9097799999693
+8,Iona Park,,,Park,,-8.4365310001647,51.9113700001479
+9,Meelick Park,,,Park,,-8.45337099904216,51.9192280002047
+10,Pophams Park,,,Park,,-8.48230015041586,51.9133830390892
+11,Sun Valley Drive,,,Park,,-8.48734071964591,51.9070349842672
+12,Bridevalley Park,,,Park,,-8.48979999967003,51.9159999995338
+13,Nash’ Boreen,,,Walk,,-8.51308780292466,51.9086858797094
+14,Clogheenmilcon Amenity Walk & Playground,,,Walk,,-8.55398544508559,51.9295808495637
+15,Kerry Road Park (Tower),,,Park,,-8.61017931873179,51.9256801249308
+16,Waterloo Amenity Walk,,,Walk,,-8.56569319986162,51.9441474196795
+17,Marina ,,,Walk,,-8.42451769152961,51.8994724152387
+18,Skehard Road Park,,,Park,,-8.4231249785474,51.8868098251011
+19,Bally brack Valley ,,,Park,,-8.43661099963231,51.8709810002197
+20,Curragheen Amenity Walk,,,Walk,,-8.53550719940423,51.8804748628842
+21,Fitzgerald Park,"Mardyke, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Park,,-8.4956382980252,51.8960903091228
+22,Murphys Farm,,,Park,,-8.53764188038693,51.8794666478929
+23,Lee Fields,,,Park,,-8.51914110944985,51.8944076398327
+24,Clashduv Park,,,Park,Yes,-8.49473519382232,51.8807496955639
+25,The Lough,,https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Park,,-8.48675847120461,51.8876446642958
+26,Parkowen,,,Park,,-8.47051379574739,51.8930252759606
+27,Tory Top Park,"Ballyphehane, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Park,Yes,-8.47562053488131,51.8854562408259
+28,Atlantic Pond,,,Park,,-8.43033584696119,51.899818297204
+29,Shalom Park,,,Park,,-8.46132154385415,51.8960099634217
+30,Ballinlough Park,,,Park,,-8.44650279029857,51.8907014478501
+31,Kennedy Park,,,Park,,-8.45560421712668,51.8954099862159
+32,Beaumont Park,,,Park,,-8.43011073903244,51.890523915692
+33,Nursury Drive Park,,,Park,,-8.44857528091415,51.886324889066
+34,Kilmore Park Multi Use Game Area,,,Park,Yes,-8.50615453100166,51.9074054960222
+35,Gerry O Sullivan Park Multi Use Game Area,,,MUGA,Yes,-8.49393034644686,51.9069944745646
+36,Pophams Park Multi Use Game Area,,,MUGA,,-8.48258364344817,51.9126971319091
+37,Military Cemetery Park,,,Park,,-8.46916096257393,51.9097848861043
+38,Glen Amenity Park,,https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Park,,-8.46131333774403,51.9141136620519
+39,Glenamoy Lawn Park,,,Park,Yes,-8.43571762328563,51.91437649082
+40,Meelick Park / Kempton Park Multi Use Game Area,,,MUGA,Yes,-8.45423049812287,51.9197050566236
+41,Grattan Hill Park,,,Park,,-8.45551275156278,51.9030111601739
+42,St Peters Park,,,Park,,-8.47959274133724,51.8993150804421
+43,Fairfield Park,,,Park,,-8.48782120872847,51.9175756522155
+44,Bells Field Park,,,Park,,-8.47078578046262,51.905010245821
+45,Spring Lane Park,,,Park,,-8.46919250781344,51.9142495356074
+46,Fitzgerald Park,"Mardyke, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Playground,,-8.49747161758629,51.8955802382315
+47,Clashduv Park,,,Playground,,-8.49534807301818,51.8815299655158
+48,The Lough,,https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Playground,,-8.48808268584978,51.8879641832667
+49,Tory Top Park,"Ballyphehane, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Playground,,-8.47441046646436,51.8852992007226
+50,Shalom Park,,,Playground,,-8.46161324209828,51.8959423081488
+51,Nursury Drive Park,,,Playground,,-8.44774145298933,51.886943232437
+52,Loughmahon Park,,,Playground,,-8.39835887622017,51.8925326034661
+53,Loughmahon Park,,,Park,,-8.39868727603355,51.8927838023171
+54,Kilmore Park,,,Playground,,-8.50665993935017,51.9075983355217
+55,Gerry O Sullivan Park,,,Playground,,-8.4929584366831,51.9066175144984
+56,Pophams Park,,,Playground,,-8.48293626723147,51.9126986042486
+57,Military Cemetery Park,,,Playground,,-8.46852623635037,51.9102680932464
+58,Glenamoy Lawn Park,,,Playground,,-8.43504204258127,51.9144898266627
+59,Meelick Park / Kempton Park,,,Playground,,-8.45393977994071,51.9198311276636
+60,Murphy's Farm,,,Playground,,-8.53635864149513,51.879492356641
+61,St Anne's Park,,,Park,,-8.47552986342811,51.903535938509
+62,Dr Mary Hearn Park ,,,Park,,-8.47537266094835,51.9028492158165
+63,Bishop Lucey Park,"Grand Parade, Cork",https://www.corkcity.ie/corkcityco/en/things-to-do/parks-outdoors/,Park,,-8.47599685712014,51.8971668125786
+64,"St Olivers, Ballincollig ",,,Cemetery,,-8.56452103945132,51.8898186683532
+65,"St James, Chetwynd, Togher",,,Cemetery,,-8.52221012636291,51.8651120526943
+66,Curraghkippane,,,Cemetery,,-8.54609546469004,51.9045545199147
+67,"St Senans, Tower, Blarney ",,,Cemetery,,-8.62447580795089,51.9313291166241
+68,"St. Columba's, Douglas",,,Cemetery,,-8.43601710812663,51.8752341520237
+69,Carrigrohane Beg,,,Cemetery,,-8.57320833754359,51.8981077984075
+70,Rathcooney Cemetery,,,Cemetery,,-8.42368097282619,51.9304180370245
+71,Kilcully Old,,,Cemetery,,-8.47478361495528,51.939069499358
+72,"St Senans Abbey, Inniscarra",,,Cemetery,,-8.63041689872743,51.8890357812201
+73,Ballincollig Regional Park,"Ballincollig, Cork",,Park,Yes,-8.62059530062084,51.8897078577266
+74,"Innishmore Lawn, Ballincollig",,,Park,,-8.61072083037161,51.8866664953579
+75,"Innishmore Lawn, Ballincollig",,,Playground,,-8.61072083037161,51.8866664953579
+76,Blarney,,,Playground,,-8.55747934267015,51.9286208388056
+77,O'Callaghans Park Outdoor Gym ,,,Park,Yes,-8.39393212312879,51.9279965002588
+78,Douglas Community Park,,,Park,Yes,-8.43849531385713,51.8752073771206
+79,Ballincollig Regional Park Playground,"Ballincollig, Cork",,Playground,,-8.61807165540832,51.8900578720751
+80,Douglas Community Park,,,Playground,,-8.43790132263845,51.8745955364581
+81,O'Callaghans Park ,,,Playground,,-8.39417763539088,51.9277855499952
+82,Tramore Valley Park,South City Link,,Park,Yes,-8.46317700149708,51.8803638706237
+83,Ballincollig Regional Skate Park,"Ballincollig, Cork",,Park,,-8.61973765386628,51.8891964480755
+84,Blarney Oudoor Gym ,,,MUGA,Yes,-8.55807711759282,51.9287398431462
+85,Ballincollig Regional Park Multi Use Game Area,"Ballincollig, Cork",,MUGA,,-8.61712214244123,51.8906464971651
+86,Clogheemilcon Multi Use Game Area,,,MUGA,Yes,-8.54338598499471,51.931467496565
+87,Clashduv Park Multi Use Game Area,,,MUGA,Yes,-8.49486923324249,51.8814869951385
+88,Cork Foyer Toddler Playground Assumption Road ,,,Playground,,-8.47188031655086,51.9112841596327
+89,Hazelwood Multi Use Game Area,,,MUGA,Yes,-8.39681383591525,51.9319463072767
+90,Life Time Lab Playground,,,Playground,,-8.50910812338387,51.8955372757419
+91,Little Island Playground ,,,Playground,,-8.33951842650806,51.8907879719239
+92,Lough Mahon Multi Use Game Area,,,MUGA,,-8.39888609566381,51.8925320052848
+93,Mangerton Close Multi Use Game Area,,,MUGA,,-8.46538051409181,51.9124887812444
+94,Rochestown Harty's Oudoor Gym,,,MUGA,,-8.39162137863864,51.8773107457042
+95,St John's Well Playground,,,Playground,,-8.48808376382813,51.9188378775114
+96,St John's Well Multi Use Game Area,,,MUGA,,-8.48787976451193,51.9188244531822
+97,St Michael's Lawn Multi Use Game Area,,,MUGA,,-8.40016628118193,51.8893543045354
+98,The Mardyke Skate Park,,,Park,,-8.49027825374414,51.8975056746032
+99,Tramore Valley Park BMX Track,,,MUGA,,-8.45994055298811,51.8802899116759
+100,Douglas Community Park Multi Use Game Area,,,MUGA,,-8.43816089443304,51.87494554426
+101,Tory Top Park  Multi Use Game Area,,,MUGA,,-8.47401933459975,51.8853717691277
+102,Gerry O Sullivan Park,,,Park,,-8.49470236039867,51.9072026174007
