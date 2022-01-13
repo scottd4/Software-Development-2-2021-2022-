@@ -35,4 +35,4 @@ All code from class and weekly labs will be uploaded to this repository
 
 [LabExamSolution](LabExamSolution) - LabExamSolution
 
-[InClass110122](InClass110122)  - Singleton and MVC Demo
+[InClass110122](InClass110122)  - Singleton and MVC Demo, template for Lab 7
