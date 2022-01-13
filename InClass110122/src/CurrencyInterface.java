@@ -1,13 +1,13 @@
 public interface CurrencyInterface {
 
     void euroToUSD(double value);
-    void usdToEuro(double value);
+    double usdToEuro();
 
     void gbpToUSD(double value);
-    void usdToGBP(double value);
+    double usdToGBP();
 
     void yuanToUSD(double value);
-    void usdToYuan(double value);
+    double usdToYuan();
 
 
 }

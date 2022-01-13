@@ -4,13 +4,14 @@ public class CurrencyConvert implements CurrencyInterface {
 
     @Override
     public void euroToUSD(double value) {
-
+        usd = value / 1.14;
     }
 
     @Override
-    public void usdToEuro(double value) {
-
+    public double usdToEuro() {
+        return usd * 1.14;
     }
+
 
     @Override
     public void gbpToUSD(double value) {
@@ -18,9 +19,10 @@ public class CurrencyConvert implements CurrencyInterface {
     }
 
     @Override
-    public void usdToGBP(double value) {
-
+    public double usdToGBP() {
+        return 0;
     }
+
 
     @Override
     public void yuanToUSD(double value) {
@@ -28,7 +30,9 @@ public class CurrencyConvert implements CurrencyInterface {
     }
 
     @Override
-    public void usdToYuan(double value) {
-
+    public double usdToYuan() {
+        return 0;
     }
+
+
 }
