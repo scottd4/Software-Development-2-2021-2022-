@@ -4,12 +4,12 @@ public class CurrencyConvert implements CurrencyInterface {
 
     @Override
     public void euroToUSD(double value) {
-        usd = value / 1.14;
+        usd = value * 1.14;
     }
 
     @Override
     public double usdToEuro() {
-        return usd * 1.14;
+        return usd / 1.14;
     }
 
 
