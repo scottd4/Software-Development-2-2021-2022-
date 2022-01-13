@@ -34,3 +34,5 @@ All code from class and weekly labs will be uploaded to this repository
 [InClass151121](InClass151121)  - Graphics Demo
 
 [LabExamSolution](LabExamSolution) - LabExamSolution
+
+[InClass110122](InClass110122)  - Singleton and MVC Demo
