@@ -1,3 +1,5 @@
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -5,35 +7,35 @@ import java.awt.event.ActionListener;
 
 public class MainMenu extends JFrame implements ActionListener {
 
-    private JButton button1 = new JButton("Singleton"), button2 = new JButton("Not Singleton");
-
+    private JButton button1 =  new JButton("Single"), button2 =  new JButton("Not Single");
 
     public MainMenu()
     {
         button1.addActionListener(this);
         button2.addActionListener(this);
 
-        setLayout(new FlowLayout());
+        this.add(button1);
+        this.add(button2);
 
-        add(button1);
-        add(button2);
+       this.setLayout(new FlowLayout());
 
-        setSize(400,400);
+       this.setSize(400, 400);
 
-        setVisible(true);
-
+       this.setVisible(true);
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == button1)
-        {
-            Single s = Single.getInstance();
+    public void actionPerformed(ActionEvent actionEvent) {
 
-        }
-        else if (e.getSource() == button2)
+        if (actionEvent.getSource() == button1)
         {
-            new NotSingle();
+            //singleton action
+            Single.getInstance();
+        }
+        else
+        {
+            //non single action
+            new NonSingle();
         }
     }
 

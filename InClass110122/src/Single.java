@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Single extends JFrame {
 
@@ -6,20 +7,22 @@ public class Single extends JFrame {
 
     private Single()
     {
-        add(new JLabel("Single"));
-        setSize(400, 400);
-        setVisible(true);
+        this.setTitle("single");
+
+        this.setLayout(new FlowLayout());
+
+        this.setSize(600, 600);
+
+        this.setVisible(true);
     }
 
     public static Single getInstance()
     {
-        if(INSTANCE == null)
+        if (INSTANCE == null)
         {
             INSTANCE = new Single();
         }
 
         return INSTANCE;
     }
-
-
 }
