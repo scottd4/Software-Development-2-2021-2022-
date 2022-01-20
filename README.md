@@ -38,3 +38,5 @@ All code from class and weekly labs will be uploaded to this repository
 [InClass110122](InClass110122)  - Singleton and MVC Demo, template for Lab 7
 
 [InClass180122](InClass180122)  - Scatter and WordArt
+
+[JSoupTutorial](JSoupTutorial) - JSoup (video to follow)
