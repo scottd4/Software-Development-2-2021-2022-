@@ -40,3 +40,5 @@ All code from class and weekly labs will be uploaded to this repository
 [InClass180122](InClass180122)  - Scatter and WordArt
 
 [JSoupTutorial](JSoupTutorial) - JSoup (video to follow)
+
+[InClass250122](InClass250122) - Interface Abstraction, Keyboard Controller
