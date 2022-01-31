@@ -11,6 +11,4 @@ public interface CurrencyInterface {
 
     void yuanToUSD(double value);
     double usdToYuan();
-
-
 }

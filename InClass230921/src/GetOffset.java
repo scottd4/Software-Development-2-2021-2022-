@@ -45,7 +45,7 @@ public class GetOffset {
         int [] returned =
                 getOffset(s.toCharArray(), w.toCharArray());
 
-        char [][] ca = new char[10][10];
+        //char [][] ca = new char[10][10];
 
         for(int i = 0;  i < s.length(); i++)
         {

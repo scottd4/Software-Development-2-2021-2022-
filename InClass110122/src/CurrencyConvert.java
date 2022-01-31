@@ -22,7 +22,6 @@ public class CurrencyConvert implements CurrencyInterface {
         return usd / 1.14;
     }
 
-
     @Override
     public void gbpToUSD(double value) {
 
@@ -46,7 +45,6 @@ public class CurrencyConvert implements CurrencyInterface {
 
     public static void main(String[] args) {
         CurrencyConvert c = new CurrencyConvert();
-
         c.euroToUSD(50);
 
         System.out.println("The value in USD is: " + c.getUSD());
