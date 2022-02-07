@@ -43,6 +43,7 @@ All code from class and weekly labs will be uploaded to this repository
 
 [InClass250122](InClass250122) - Interface Abstraction, Keyboard Controller
 
+[InClass010222](InClass010222) - Shape Click, Move and Currency converter
 
 
 ### Tutorials
