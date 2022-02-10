@@ -45,6 +45,7 @@ All code from class and weekly labs will be uploaded to this repository
 
 [InClass010222](InClass010222) - Shape Click, Move and Currency converter
 
+[InClass080222](InClass080222) - TicTacToe
 
 ### Tutorials
 [Tutorials](Tutorials) - All Tutorials will be in this folder
