@@ -15,7 +15,8 @@ public class JSoupTutorial {
 
             Document doc = Jsoup.connect(String.format("https://www.xe.com/currencyconverter/convert/?Amount=%f&From=%s&To=%s", amount, fromCurrency, toCurrency)).get();
 
-            Elements elements = doc.select("p");
+            Elements elements = doc.select("a");
+            System.out.println(elements);
             for (Element element : elements) {
                 //System.out.println(element);
                 String classes = element.className();
