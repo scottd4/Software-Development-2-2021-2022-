@@ -50,3 +50,8 @@ All code from class and weekly labs will be uploaded to this repository
 
 ### Tutorials
 [Tutorials](Tutorials) - All Tutorials will be in this folder
+- Clicking Colors
+- Lab 8 Starter Template
+- Using the layout manager for JFrame
+- Dropping shapes
+- Arraylist of Abstract Shape 
