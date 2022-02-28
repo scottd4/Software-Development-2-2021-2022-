@@ -55,3 +55,4 @@ All code from class and weekly labs will be uploaded to this repository
 - Using the layout manager for JFrame
 - Dropping shapes
 - Arraylist of Abstract Shape 
+- Basics part 1
