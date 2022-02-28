@@ -71,6 +71,20 @@ public class BasicsPart1 {
             System.out.println();
         }
 
+        for (i = 0; i < 10; i++)
+        {
+            for (int j = 0; j<10; j++)
+            {
+                // skip all cases of 4 in j (04,14,24,....)
+                if (j == 4)
+                {
+                    continue;
+                }
+                System.out.print(i +""+  j + ", ") ;
+            }
+            System.out.println();
+        }
+
 
 
         // Exceptions
