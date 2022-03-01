@@ -31,7 +31,7 @@ public class PlayerMove extends JFrame implements KeyListener{
     @Override
     public void keyTyped(KeyEvent e) {
         System.out.println("key Pressed");
-        drawingArea.moveLeft();
+        //drawingArea.moveLeft();
     }
 
     @Override
@@ -42,19 +42,19 @@ public class PlayerMove extends JFrame implements KeyListener{
     @Override
     public void keyReleased(KeyEvent e) {
 
-        if(e.getKeyCode() == 39 ){
+        if(e.getKeyCode() == 68 ){
             drawingArea.moveRight();
         }
-        else if(e.getKeyCode() == 37 )
+        else if(e.getKeyCode() == 65 )
         {
             drawingArea.moveLeft();
         }
-        else if (e.getKeyCode() == 40)
+        else if (e.getKeyCode() == 83)
         {
             //down
             drawingArea.moveDown();
         }
-        else if(e.getKeyCode() == 38)
+        else if(e.getKeyCode() == 87)
         {
             // up
             drawingArea.moveUp();
