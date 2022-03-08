@@ -73,6 +73,9 @@ public class BasicsPart1 {
 
         for (i = 0; i < 10; i++)
         {
+            if (i == 6)
+                continue;
+
             for (int j = 0; j<10; j++)
             {
                 // skip all cases of 4 in j (04,14,24,....)
