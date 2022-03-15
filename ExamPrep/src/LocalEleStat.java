@@ -41,6 +41,26 @@ public class LocalEleStat {
                 '}';
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getParty() {
+        return party;
+    }
+
+    public String getLocalElectoralArea() {
+        return localElectoralArea;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
     class Address
     {
         String [] lines;
@@ -50,11 +70,11 @@ public class LocalEleStat {
             lines = s.split(",");
         }
 
+
         @Override
         public String toString() {
-            return "Address{" +
-                    "lines=" + Arrays.toString(lines) +
-                    '}';
+            return  Arrays.toString(lines);
+
         }
     }
 }

@@ -3,10 +3,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ReadCSV {
-    public static void main(String[] args) {
-        ArrayList<LocalEleStat> stats = new ArrayList<>();
 
-        try{
+    private ArrayList<LocalEleStat> stats = new ArrayList<>();
+    public ReadCSV()
+    {
+         try{
             Scanner sc = new Scanner(new File("input.csv"));
 
             sc.nextLine();//skip first heading
@@ -23,15 +24,23 @@ public class ReadCSV {
                 }
             }
 
-            for(LocalEleStat stat : stats)
-            {
-                System.out.println(stat);
-            }
         }
         catch (Exception e)
         {
             e.printStackTrace();;
         }
+    }
 
+    public ArrayList<LocalEleStat> getStats()
+    {
+        return stats;
+    }
+    public String [] getHeadings()
+    {
+        return new String[]{"Surname","First Name","Address","Party","Local Electoral Area"};
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new ReadCSV().getStats());
     }
 }
