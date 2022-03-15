@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class ReadCSV {
 
     private ArrayList<LocalEleStat> stats = new ArrayList<>();
+    private String [] headings;
     public ReadCSV()
     {
          try{
             Scanner sc = new Scanner(new File("input.csv"));
 
             sc.nextLine();//skip first heading
-            sc.nextLine();//skip second heading
+            headings = sc.nextLine().split(",");//add second row to headings
 
             while (sc.hasNextLine())
             {
@@ -37,7 +38,7 @@ public class ReadCSV {
     }
     public String [] getHeadings()
     {
-        return new String[]{"Surname","First Name","Address","Party","Local Electoral Area"};
+        return headings;
     }
 
     public static void main(String[] args) {

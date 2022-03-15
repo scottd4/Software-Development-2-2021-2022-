@@ -28,16 +28,18 @@ public class GUIPart extends JFrame {
         String [] cols = csv.getHeadings();
 
         DefaultTableModel model = new DefaultTableModel(cols, 0);
-
+        int no = 1;
         for(LocalEleStat stat : csv.getStats())
         {
             model.addRow(new Object[]{
+                no,
                 stat.getSurname(),
                 stat.getFirstName(),
                 stat.getAddress(),
                 stat.getParty(),
                 stat.getLocalElectoralArea()
             });
+            no++;
         }
 
         table = new JTable(model);
