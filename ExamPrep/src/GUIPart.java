@@ -15,10 +15,13 @@ public class GUIPart extends JFrame implements ActionListener {
 
     private JPanel p1 = new JPanel();
     private JPanel p2 = new JPanel();
+    private JPanel p3 = new JPanel();
 
     private JComboBox<String> choices;
 
     private JTextPane textArea = new JTextPane();
+
+    private JButton add = new JButton("add");
 
     private ReadCSV csv;
 
@@ -81,7 +84,8 @@ public class GUIPart extends JFrame implements ActionListener {
         c.gridy = 1;
         p1.add(textArea, c);
 
-
+        String area = (String)choices.getSelectedItem();
+        setArea(area);
         //___________________________________________
         // Panel 2
 
@@ -110,13 +114,20 @@ public class GUIPart extends JFrame implements ActionListener {
 
         p2.add(scrollPane);
 
+        //___________________________________________
+        // Panel 3
+
+        add.addActionListener(this);
+        p3.add(add);
+
+
         tabbedPane.add("Select Area",p1);
         tabbedPane.add("View All",p2);
+        tabbedPane.add("Add New",p3);
 
         this.add(tabbedPane);
 
-        String area = (String)choices.getSelectedItem();
-        setArea(area);
+
 
         this.setVisible(true);
 
@@ -143,8 +154,14 @@ public class GUIPart extends JFrame implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        String area = (String)choices.getSelectedItem();
-        setArea(area);
+        if (e.getSource() == choices){
+            String area = (String)choices.getSelectedItem();
+            setArea(area);
+        }
+        if (e.getSource() == add)
+        {
+            csv.addStat(new LocalEleStat("1,Rock,Noel,\"69 Pinewood Crescent, Glasnevin North, Dublin 9\",Fine Gael,Artane/Whitehall,,,,,"));
+        }
 
     }
 

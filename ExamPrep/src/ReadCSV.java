@@ -44,4 +44,10 @@ public class ReadCSV {
         return headings;
     }
 
+    public void addStat(LocalEleStat s)
+    {
+        stats.add(s);
+    }
+
+
 }
