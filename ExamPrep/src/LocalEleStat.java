@@ -30,15 +30,24 @@ public class LocalEleStat {
         }
     }
 
+    private String pad(String s, int padding)
+    {
+        String temp = "";
+        for(int i = 0; i < padding; i++)
+        {
+            temp = temp + " ";
+        }
+
+        return (s+temp).substring(0, padding);
+
+    }
+
     @Override
     public String toString() {
-        return "LocalEleStat{" +
-                "surname='" + surname + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", party='" + party + '\'' +
-                ", localElectoralArea='" + localElectoralArea + '\'' +
-                ", address=" + address +
-                '}';
+
+
+        return String.format("<tr><td>%s</td><td>%s</td><td>%s</td></tr>", (surname+"," +firstName), party, localElectoralArea);
+        //return surname + ", \t" + firstName + "\t(" + party +") \t\t\t" + localElectoralArea;
     }
 
     public String getSurname() {

@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,10 +7,12 @@ public class ReadCSV {
 
     private ArrayList<LocalEleStat> stats = new ArrayList<>();
     private String [] headings;
-    public ReadCSV()
+
+    public ReadCSV(File f)
     {
          try{
-            Scanner sc = new Scanner(new File("input.csv"));
+
+            Scanner sc = new Scanner(f);
 
             sc.nextLine();//skip first heading
             headings = sc.nextLine().split(",");//add second row to headings
@@ -41,7 +44,4 @@ public class ReadCSV {
         return headings;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new ReadCSV().getStats());
-    }
 }
