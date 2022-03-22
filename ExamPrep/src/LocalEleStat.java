@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class LocalEleStat {
 
-    private String surname,firstName,party,localElectoralArea;
+    private String no, surname,firstName,party,localElectoralArea;
     private Address address;
 
     public LocalEleStat(String s)
@@ -17,6 +17,7 @@ public class LocalEleStat {
             address = new Address(sc.next());
             String[] part3 = sc.next().split(",");
 
+            no = part1[0];
             surname = part1[1];
             firstName = part1[2];
 
@@ -48,6 +49,10 @@ public class LocalEleStat {
 
         return String.format("<tr><td>%s</td><td>%s</td><td>%s</td></tr>", (surname+"," +firstName), party, localElectoralArea);
         //return surname + ", \t" + firstName + "\t(" + party +") \t\t\t" + localElectoralArea;
+    }
+
+    public String getNo() {
+        return no;
     }
 
     public String getSurname() {

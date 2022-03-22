@@ -49,5 +49,22 @@ public class ReadCSV {
         stats.add(s);
     }
 
+    public void removeStat(String s)
+    {
+        int i = -1;
+        for(LocalEleStat stat : stats)
+        {
+            if(stat.getNo().equals(s))
+            {
+                i = stats.indexOf(stat);
+                break;
+            }
+        }
+
+        if(i != -1)
+            stats.remove(i);
+
+    }
+
 
 }

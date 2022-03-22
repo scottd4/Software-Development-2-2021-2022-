@@ -1,15 +1,17 @@
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-public class GUIPart extends JFrame implements ActionListener {
+public class GUIPart extends JFrame implements ActionListener, ChangeListener {
 
     private JTabbedPane tabbedPane = new JTabbedPane();
 
-    private JTable table;
+    private JTable table = new JTable();
 
     private JScrollPane scrollPane;
 
@@ -21,7 +23,8 @@ public class GUIPart extends JFrame implements ActionListener {
 
     private JTextPane textArea = new JTextPane();
 
-    private JButton add = new JButton("add");
+    private JButton addButton = new JButton("Add");
+    private JButton removeButton = new JButton("Remove");
 
     private ReadCSV csv;
 
@@ -31,6 +34,7 @@ public class GUIPart extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setTitle("GUI Part");
         this.setSize(750,750);
+        this.setLayout(new BorderLayout());
 
     }
 
@@ -89,49 +93,66 @@ public class GUIPart extends JFrame implements ActionListener {
         //___________________________________________
         // Panel 2
 
-        String [] cols = csv.getHeadings();
+        p2.setLayout(new GridBagLayout());
 
-        DefaultTableModel model = new DefaultTableModel(cols, 0);
-        int no = 1;
-        for(LocalEleStat stat : csv.getStats())
-        {
-            model.addRow(new Object[]{
-                no,
-                stat.getSurname(),
-                stat.getFirstName(),
-                stat.getAddress(),
-                stat.getParty(),
-                stat.getLocalElectoralArea()
-            });
-            no++;
-        }
+        c = new GridBagConstraints();
 
-        table = new JTable(model);
+        updateTable();
 
         table.setAutoCreateRowSorter(true);
 
         scrollPane = new JScrollPane(table);
 
-        p2.add(scrollPane);
+        c.fill = GridBagConstraints.BOTH;
+        c.gridx = 0;
+        c.gridy = 0;
+
+        p2.add(scrollPane, c);
+
+        c.fill = GridBagConstraints.NONE;
+        c.gridy = 1;
+        p2.add(removeButton,c);
+
+        removeButton.addActionListener(this);
 
         //___________________________________________
         // Panel 3
 
-        add.addActionListener(this);
-        p3.add(add);
+        addButton.addActionListener(this);
+        p3.add(addButton);
 
 
         tabbedPane.add("Select Area",p1);
         tabbedPane.add("View All",p2);
         tabbedPane.add("Add New",p3);
 
-        this.add(tabbedPane);
+        tabbedPane.addChangeListener(this);
 
-
+        this.add(tabbedPane, BorderLayout.CENTER);
 
         this.setVisible(true);
 
 
+    }
+
+    private void updateTable()
+    {
+        String [] cols = csv.getHeadings();
+
+        DefaultTableModel model = new DefaultTableModel(cols, 0);
+        for(LocalEleStat stat : csv.getStats())
+        {
+            model.addRow(new Object[]{
+                    stat.getNo(),
+                    stat.getSurname(),
+                    stat.getFirstName(),
+                    stat.getAddress(),
+                    stat.getParty(),
+                    stat.getLocalElectoralArea()
+            });
+        }
+
+        table.setModel(model);
     }
 
     public void setArea(String area)
@@ -158,16 +179,38 @@ public class GUIPart extends JFrame implements ActionListener {
             String area = (String)choices.getSelectedItem();
             setArea(area);
         }
-        if (e.getSource() == add)
+        if (e.getSource() == addButton)
         {
             csv.addStat(new LocalEleStat("1,Rock,Noel,\"69 Pinewood Crescent, Glasnevin North, Dublin 9\",Fine Gael,Artane/Whitehall,,,,,"));
         }
+        if (e.getSource() == removeButton)
+        {
+            String value = table.getModel().getValueAt(table.getSelectedRow(), 0).toString();
+            csv.removeStat(value);
+            updateTable();
+        }
 
     }
+    @Override
+    public void stateChanged(ChangeEvent changeEvent) {
 
+        JTabbedPane temp = (JTabbedPane)changeEvent.getSource();
+
+        if(temp.getSelectedIndex() == 0)
+        {
+            String area = (String)choices.getSelectedItem();
+            setArea(area);
+        }
+        else if (temp.getSelectedIndex() == 1)
+        {
+            updateTable();
+        }
+
+    }
     public static void main(String[] args) {
         new GUIPart().init();
     }
+
 
 
 }
