@@ -5,9 +5,11 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.File;
 
-public class GUIPart extends JFrame implements ActionListener, ChangeListener {
+public class GUIPart extends JFrame implements ActionListener, ChangeListener, WindowListener {
 
     private JTabbedPane tabbedPane = new JTabbedPane();
 
@@ -35,6 +37,7 @@ public class GUIPart extends JFrame implements ActionListener, ChangeListener {
         this.setTitle("GUI Part");
         this.setSize(750,750);
         this.setLayout(new BorderLayout());
+        this.addWindowListener(this);
 
     }
 
@@ -207,10 +210,45 @@ public class GUIPart extends JFrame implements ActionListener, ChangeListener {
         }
 
     }
+
+
+    @Override
+    public void windowOpened(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowClosing(WindowEvent windowEvent) {
+        csv.writeFile();
+    }
+
+    @Override
+    public void windowClosed(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowIconified(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowDeiconified(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowActivated(WindowEvent windowEvent) {
+
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent windowEvent) {
+
+    }
     public static void main(String[] args) {
         new GUIPart().init();
     }
-
 
 
 }

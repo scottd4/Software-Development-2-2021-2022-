@@ -43,6 +43,10 @@ public class LocalEleStat {
 
     }
 
+    public String toCSV()
+    {
+        return String.format("%s,%s,%s,%s,%s",no, surname, firstName, party, localElectoralArea);
+    }
     @Override
     public String toString() {
 

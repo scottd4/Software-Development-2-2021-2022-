@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.io.File;
+import java.io.PrintWriter;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -64,6 +66,30 @@ public class ReadCSV {
         if(i != -1)
             stats.remove(i);
 
+    }
+
+    public void writeFile()
+    {
+        try {
+
+            System.out.println("here");
+            File f = new File("output"+ (int)((Math.random()*1000)) + ".csv");
+
+            System.out.println(f.toString());
+            f.createNewFile();
+            PrintWriter pw = new PrintWriter(f);
+
+            for(LocalEleStat stat : stats)
+            {
+                pw.println(stat.toCSV());
+            }
+
+            pw.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
 
