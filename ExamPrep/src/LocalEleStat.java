@@ -1,3 +1,5 @@
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -18,10 +20,10 @@ public class LocalEleStat {
             String[] part3 = sc.next().split(",");
 
             no = part1[0];
-            surname = part1[1];
-            firstName = part1[2];
+            surname = encode(part1[1]);
+            firstName = encode(part1[2]);
 
-            party = part3[1];
+            party = encode(part3[1]);
             localElectoralArea = part3[2];
         }
         catch (Exception e)
@@ -29,6 +31,12 @@ public class LocalEleStat {
             //ignore exceptions
             throw new IllegalArgumentException("doesnt fit");
         }
+    }
+
+    private String encode(String s)
+    {
+        ByteBuffer buffer = StandardCharsets.UTF_8.encode(s);
+        return StandardCharsets.UTF_8.decode(buffer).toString();
     }
 
     private String pad(String s, int padding)

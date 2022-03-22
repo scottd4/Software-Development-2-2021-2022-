@@ -79,6 +79,7 @@ public class GUIPart extends JFrame implements ActionListener, ChangeListener, W
 
         p1.setLayout(new GridBagLayout());
 
+
         GridBagConstraints c = new GridBagConstraints();
 
         c.insets = new Insets(0,5,0,5);
@@ -86,13 +87,20 @@ public class GUIPart extends JFrame implements ActionListener, ChangeListener, W
         c.gridx = 0;
         c.gridy = 0;
 
+        c.fill = GridBagConstraints.HORIZONTAL;
+
         p1.add(choices, c);
 
         c.gridy = 1;
+        c.fill = GridBagConstraints.BOTH;
+        c.weightx= 1.0;
+        c.weighty= 1.0;
+
         p1.add(textArea, c);
 
         String area = (String)choices.getSelectedItem();
         setArea(area);
+
         //___________________________________________
         // Panel 2
 
@@ -109,11 +117,16 @@ public class GUIPart extends JFrame implements ActionListener, ChangeListener, W
         c.fill = GridBagConstraints.BOTH;
         c.gridx = 0;
         c.gridy = 0;
+        c.weightx= 1.0;
+        c.weighty= 0.9;
 
         p2.add(scrollPane, c);
 
         c.fill = GridBagConstraints.NONE;
+
         c.gridy = 1;
+        c.weighty= .1;
+
         p2.add(removeButton,c);
 
         removeButton.addActionListener(this);
