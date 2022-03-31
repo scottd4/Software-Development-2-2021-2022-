@@ -2,6 +2,9 @@
 
 All code from class and weekly labs will be uploaded to this repository
 
+## Lab Exam Solutions
+[Solutions Folder](LabExamSolution) 
+
 ## Code Directory 
 [InClass010921](InClass010921)  - lab1 tutorial
 

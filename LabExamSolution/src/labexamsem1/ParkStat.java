@@ -1,4 +1,5 @@
-import java.util.Comparator;
+package labexamsem1;
+
 import java.util.Scanner;
 
 public class ParkStat implements Comparable<ParkStat> {

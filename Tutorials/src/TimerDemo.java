@@ -1,13 +1,16 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.util.Scanner;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class TimerDemo {
     public String name;
-    public static int counter = 10;
-    public static int lastValue = 0;
+    public static int counter = 0;
+    //public static int lastValue = 0;
 
-    public static Lock lock = new ReentrantLock();
+    //f
+    // public static Lock lock = new ReentrantLock();
 
     public TimerDemo()
     {
@@ -50,6 +53,8 @@ public class TimerDemo {
                 }
             }
         }
+
+
     }
 
     public static void main(String[] args) {
